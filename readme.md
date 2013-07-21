@@ -1,13 +1,13 @@
 The webpage.py program was parallelized to 
-•	Break up the task into smaller tasks[9]
+•	Break up the task into smaller tasks
 
 URLs were entered via the command line. Each URL spawned a thread. The thread sent the URL to the worker nodes. 
  
-•	Assign the smaller tasks to multiple workers that completed the tasks simultaneously[9]
+•	Assign the smaller tasks to multiple workers that completed the tasks simultaneously
 
 Each worker node counted the number of words on the webpage of the URL that was passed via the Rabbit MQ messaging service.
 
-•	Coordinate the workers and their communication [9]
+•	Coordinate the workers and their communication 
 
 Each task was passed in round-robin fashion via a load-balancer.
 
